@@ -55,15 +55,16 @@ class Sora:
             print("\n" + " " * padding + "\033[94m╔══════════════════════════════════════════════════════╗\033[0m")
             print(" " * padding + "\033[94m║\033[0m                                                      \033[94m║\033[0m")
             print(" " * padding + "\033[94m║\033[0m                   \033[1m\033[96mSoul's Assistant\033[0m                   \033[94m║\033[0m")
-            print(" " * padding + "\033[94m║\033[0m                    \033[96m\033[0m                       \033[94m║\033[0m")
+            print(" " * padding + "\033[94m║\033[0m                                                      \033[94m║\033[0m")  # Fixed empty row
             print(" " * padding + "\033[94m╠══════════════════════════════════════════════════════╣\033[0m")
             print(" " * padding + "\033[94m║\033[0m                                                      \033[94m║\033[0m")
-            print(" " * padding + f"\033[94m║\033[0m \033[1m\033[96mLogged in as:\033[0m \033[96mSoul\033[0m                  \033[94m║\033[0m")
-            print(" " * padding + f"\033[94m║\033[0m \033[1m\033[96mUser ID:\033[0m      \033[96m{self.bot.user.id}\033[0m                    \033[94m║\033[0m")
+            print(" " * padding + f"\033[94m║\033[0m \033[1m\033[96mLogged in as:\033[0m \033[96mSoul\033[0m                                   \033[94m║\033[0m")  # Fixed spacing
+            print(" " * padding + f"\033[94m║\033[0m \033[1m\033[96mUser ID:\033[0m      \033[96m{self.bot.user.id}\033[0m                    \033[94m║\033[0m")  # Fixed spacing
             print(" " * padding + "\033[94m║\033[0m                                                      \033[94m║\033[0m")
             print(" " * padding + "\033[94m╚══════════════════════════════════════════════════════╝\033[0m")
             print("\n")
             print(" " * padding + "\033[96m         Let's engage in delightful conversations! \033[0m\n")
+
 
             await self.bot.tree.sync()  # Sync slash commands
 
